@@ -17,17 +17,16 @@ client.on('message', msg => {
       try {
         msg.delete();
       } catch(e) {}
-      const emoteAttachment = new Discord.Attachment('./emotes/' + emotes[msg.content], emotes[msg.content]);
-      const msgEmbed = new Discord.RichEmbed()
+      const emoteAttachment = new Discord.MessageAttachment('./emotes/' + emotes[msg.content], emotes[msg.content]);
+      const msgEmbed = new Discord.MessageEmbed()
         .setColor('#FFFFFF')
-        .setAuthor(msg.author.username, msg.author.avatarURL)
-        .attachFile(emoteAttachment)
+        .setAuthor(msg.author.username, msg.author.avatarURL())
+        .attachFiles(emoteAttachment)
         .setImage('attachment://' + emotes[msg.content])
-        .setFooter(msg.content)
+        .setFooter(msg.content);
       try {
         msg.channel.send(msgEmbed);
-      } catch(e) {
-      }
+      } catch(e) {}
     }
 });
 

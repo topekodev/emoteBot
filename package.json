@@ -1,0 +1,22 @@
+{
+  "name": "emotebot",
+  "version": "1.0.0",
+  "description": "Discord.js bot for twitch emotes",
+  "main": "emoteBot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Topekz/emoteBot.git"
+  },
+  "author": "Topekz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Topekz/emoteBot/issues"
+  },
+  "homepage": "https://github.com/Topekz/emoteBot#readme",
+  "dependencies": {
+    "discord.js": "^12.1.1"
+  }
+}
