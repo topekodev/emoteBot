@@ -23,7 +23,6 @@ client.on('message', msg => {
         .setAuthor(msg.author.username, msg.author.avatarURL())
         .attachFiles(emoteAttachment)
         .setImage('attachment://' + emotes[msg.content])
-        .setFooter(msg.content);
       try {
         msg.channel.send(msgEmbed);
       } catch(e) {}
