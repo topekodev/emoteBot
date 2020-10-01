@@ -5,7 +5,7 @@ const fs = require('fs');
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity("Type twitch emote");
+  client.user.setActivity("Type twitch emotes");
 });
 
 const emotes = JSON.parse(fs.readFileSync('emotes.json'));
@@ -17,14 +17,13 @@ client.on('message', msg => {
       try {
         msg.delete();
       } catch(e) {}
-      const emoteAttachment = new Discord.MessageAttachment('./emotes/' + emotes[msg.content], emotes[msg.content]);
-      const msgEmbed = new Discord.MessageEmbed()
-        .setColor('#FFFFFF')
-        .setAuthor(msg.author.username, msg.author.avatarURL())
-        .attachFiles(emoteAttachment)
-        .setImage('attachment://' + emotes[msg.content])
       try {
-        msg.channel.send(msgEmbed);
+        msg.channel.send(new Discord.MessageEmbed()
+          .setColor('#FFFFFF')
+          .setAuthor(msg.author.username, msg.author.avatarURL())
+          .attachFiles(new Discord.MessageAttachment('./emotes/' + emotes[msg.content], emotes[msg.content]))
+          .setImage('attachment://' + emotes[msg.content])
+        );
       } catch(e) {}
     }
 });
