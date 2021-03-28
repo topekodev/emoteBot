@@ -5,7 +5,7 @@ Discord.js bot for twitch emotes
 
 ![Screenshot](example.png)
 
-# Instructions
+## Instructions
 - Install [nodejs](https://nodejs.org) 12 or newer.
 - Clone this repository.
 - Run ``npm install`` inside the directory.
@@ -13,7 +13,7 @@ Discord.js bot for twitch emotes
 - Create a new file named ``.env`` and add this line: ``DC_KEY=<token>`` where <token> is your bot's token.
 - The bot can be started with: ``node emoteBot.js`` or if you're on Linux and would like to use screen: ``./startBot.sh``.
 
-# Contributing
+## Contributing
 ### Emotes
 - Add your emote into the "emotes.json" file as a new line. Example: ``"<emote_name>": "<emote_link>"``.
 - Make sure to have a comma after every line except the last line with an emote.
