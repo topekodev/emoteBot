@@ -1,7 +1,7 @@
 # emoteBot
 Discord.js bot for twitch emotes
 
---> [Add to your server!](https://discordapp.com/oauth2/authorize?client_id=628258149291261962&scope=bot) <--
+--> [Add to your server!](https://discord.com/api/oauth2/authorize?client_id=628258149291261962&permissions=59392&scope=bot) <--
 
 ![Screenshot](example.png)
 
