@@ -21,8 +21,7 @@ client.on('message', msg => {
         msg.channel.send(new Discord.MessageEmbed()
           .setColor('#FFFFFF')
           .setAuthor(msg.author.username, msg.author.avatarURL())
-          .attachFiles(new Discord.MessageAttachment('./emotes/' + emotes[msg.content], emotes[msg.content]))
-          .setImage('attachment://' + emotes[msg.content])
+          .setImage(emotes[msg.content])
         );
       } catch(e) {}
     }

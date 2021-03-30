@@ -18,7 +18,7 @@ Discord.js bot for twitch emotes
 - Add your emote into the "emotes.json" file as a new line. Example: ``"<emote_name>": "<emote_link>"``.
 - Make sure to have a comma after every line except the last line with an emote.
 - <emote_name> is the emote keyword.
-- <emote_link> is a link to the emote image. You can find emotes from FFZ's or BTTV's official sites. Copy the image location of the 2X version of the emote.
+- <emote_link> is a link to the emote image. You can find emotes from FFZ's or BTTV's official sites. Copy the image location of the 2X version of the emote. If the emote is a gif, make sure to have ".gif" in the link.
 - Make a pull request with your changes. :)
 ### Code
 - Make your changes and make a pull request. I will look at it. :)
