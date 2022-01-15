@@ -4,13 +4,14 @@
   "description": "Discord.js bot for twitch emotes",
   "main": "emoteBot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node emoteBot.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Topekz/emoteBot.git"
   },
-  "author": "Topekz",
+  "author": "TopekoDev",
   "bugs": {
     "url": "https://github.com/TopekoDev/emoteBot/issues"
   },

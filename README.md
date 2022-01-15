@@ -11,7 +11,7 @@ Discord.js bot for Twitch emotes
 - Run ``npm install`` inside the directory.
 - Create a new Discord application and a bot from [here](https://discordapp.com/developers/applications).
 - Create a new file named ``.env`` and add this line: ``DC_KEY=token`` where "token" is your bot's token.
-- The bot can be started with: ``node emoteBot.js`` or if you're on Linux and would like to use screen: ``./startBot.sh``.
+- The bot can be started with: ``node emoteBot.js`` or if you're on Linux and would like start it using pm2: ``./start.sh``.
 
 ## Contributing
 ### Emotes
